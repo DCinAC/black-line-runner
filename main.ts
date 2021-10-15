@@ -2,10 +2,10 @@ input.onButtonPressed(Button.A, function () {
     speed += -1
 })
 function go_left () {
-    mbit_Robot.CarCtrlSpeed2(mbit_Robot.CarState.Car_Run, speed * 0.7, speed)
+    mbit_Robot.CarCtrlSpeed2(mbit_Robot.CarState.Car_Run, 0, speed * 0.7)
 }
 function go_right () {
-    mbit_Robot.CarCtrlSpeed2(mbit_Robot.CarState.Car_Run, speed, speed * 0.7)
+    mbit_Robot.CarCtrlSpeed2(mbit_Robot.CarState.Car_Run, speed * 0.7, 0)
 }
 input.onButtonPressed(Button.B, function () {
     speed += 1
